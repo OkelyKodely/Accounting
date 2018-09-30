@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58B3D984-D04D-4DC5-BCC5-1745AC7B4630}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Acct</RootNamespace>
+    <AssemblyName>Acct</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts.Designer.cs">
+      <DependentUpon>Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acct.Designer.cs">
+      <DependentUpon>Acct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IncomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeForm.Designer.cs">
+      <DependentUpon>IncomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpensesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpensesForm.Designer.cs">
+      <DependentUpon>ExpensesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APForm.Designer.cs">
+      <DependentUpon>APForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARForm.Designer.cs">
+      <DependentUpon>ARForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpensesAndIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpensesAndIncome.Designer.cs">
+      <DependentUpon>ExpensesAndIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivePaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceivePaymentForm.Designer.cs">
+      <DependentUpon>ReceivePaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WriteCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WriteCheckForm.Designer.cs">
+      <DependentUpon>WriteCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewARForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewARForm.Designer.cs">
+      <DependentUpon>NewARForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAPForm.Designer.cs">
+      <DependentUpon>NewAPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Accounts.resx">
+      <DependentUpon>Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acct.resx">
+      <DependentUpon>Acct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeForm.resx">
+      <DependentUpon>IncomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesForm.resx">
+      <DependentUpon>ExpensesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APForm.resx">
+      <DependentUpon>APForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARForm.resx">
+      <DependentUpon>ARForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesAndIncome.resx">
+      <DependentUpon>ExpensesAndIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceivePaymentForm.resx">
+      <DependentUpon>ReceivePaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteCheckForm.resx">
+      <DependentUpon>WriteCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewARForm.resx">
+      <DependentUpon>NewARForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAPForm.resx">
+      <DependentUpon>NewAPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
